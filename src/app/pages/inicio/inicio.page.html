@@ -1,0 +1,32 @@
+<ion-header class="ion-padding">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Inicio</ion-title>
+    <ion-buttons slot="end">
+      <ion-avatar id="abrir-alert">
+        <ion-img [src]="avatarList[0].imagen"></ion-img>
+      </ion-avatar>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-alert trigger="abrir-alert"
+             header="¿Deseas moverte a la página Sheet?"
+             subHeader="Piensatelo bien"
+             message="Puede ser una decision vital, no respondas a la ligera"
+             [buttons]="botonesAlert">
+
+  </ion-alert>
+
+  <ion-list>
+    @for (avatar of avatarList; track avatar.nombre){
+      <ion-item>
+        <ion-avatar slot="end">
+          <ion-img [src]="avatar.imagen"></ion-img>
+        </ion-avatar>
+        <ion-label>{{avatar.nombre}}</ion-label>
+      </ion-item>
+    }
+  </ion-list>
+</ion-content>
