@@ -1,7 +1,7 @@
 {
   "name": "ejercicio02Completo",
-  "version": "0.0.1",
-  "author": "Ionic Framework",
+  "version": "0.1.0",
+  "author": "Alejandro Company",
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
